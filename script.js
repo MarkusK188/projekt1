@@ -8,6 +8,7 @@ async function randomQuote() {
 	let data = await response.json();
 	console.log(data);
 	quote.textContent = data.quote;
+	quote.classList.add("speech-bubble");
 	randomPokemon();
 
 };
